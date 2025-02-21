@@ -32,29 +32,45 @@
         android:hint="Ingrese el valor"
         android:inputType="numberDecimal" />
 
-    <Spinner
-        android:id="@+id/spinner_temperature_from"
+    <!-- LinearLayout horizontal para los spinners y botón -->
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+        <Spinner
+            android:id="@+id/spinner_temperature_from"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
 
-    <Spinner
-        android:id="@+id/spinner_temperature_to"
+        <Spinner
+            android:id="@+id/spinner_temperature_to"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_convert_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Convertir" />
 
-    <Button
-        android:id="@+id/btn_convert_temperature"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Convertir" />
-
-    <TextView
-        android:id="@+id/result_temperature"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Resultado:"
-        android:textSize="16sp"
-        android:paddingTop="10dp" />
+        <!-- Resultado al lado del botón -->
+        <TextView
+            android:id="@+id/result_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resultado:"
+            android:textSize="16sp"
+            android:paddingLeft="20dp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
 
     <!-- Conversión de moneda -->
     <TextView
@@ -72,29 +88,45 @@
         android:hint="Ingrese monto"
         android:inputType="numberDecimal" />
 
-    <Spinner
-        android:id="@+id/spinner_currency_from"
+    <!-- LinearLayout horizontal para los spinners de moneda -->
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+        <Spinner
+            android:id="@+id/spinner_currency_from"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
 
-    <Spinner
-        android:id="@+id/spinner_currency_to"
+        <Spinner
+            android:id="@+id/spinner_currency_to"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_convert_currency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Convertir" />
 
-    <Button
-        android:id="@+id/btn_convert_currency"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Convertir" />
-
-    <TextView
-        android:id="@+id/result_currency"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Resultado:"
-        android:textSize="16sp"
-        android:paddingTop="10dp" />
+        <!-- Resultado al lado del botón -->
+        <TextView
+            android:id="@+id/result_currency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resultado:"
+            android:textSize="16sp"
+            android:paddingLeft="20dp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
 
     <!-- Conversión de longitud -->
     <TextView
@@ -112,28 +144,52 @@
         android:hint="Ingrese valor"
         android:inputType="numberDecimal" />
 
-    <Spinner
-        android:id="@+id/spinner_length_from"
+    <!-- LinearLayout horizontal para los spinners de longitud -->
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+        <Spinner
+            android:id="@+id/spinner_length_from"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
 
-    <Spinner
-        android:id="@+id/spinner_length_to"
+        <Spinner
+            android:id="@+id/spinner_length_to"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_convert_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Convertir" />
+
+        <!-- Resultado al lado del botón -->
+        <TextView
+            android:id="@+id/result_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resultado:"
+            android:textSize="16sp"
+            android:paddingLeft="20dp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
 
     <Button
-        android:id="@+id/btn_convert_length"
+        android:id="@+id/btn_clear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Convertir" />
-
-    <TextView
-        android:id="@+id/result_length"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Resultado:"
-        android:textSize="16sp"
-        android:paddingTop="10dp" />
+        android:text="LIMPIAR"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
 
 </LinearLayout>

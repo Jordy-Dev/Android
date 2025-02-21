@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private Spinner spinnerCurrencyFrom, spinnerCurrencyTo;
     private Spinner spinnerLengthFrom, spinnerLengthTo;
     private TextView resultTemperature, resultCurrency, resultLength;
-    private Button btnConvertTemperature, btnConvertCurrency, btnConvertLength;
+    private Button btnConvertTemperature, btnConvertCurrency, btnConvertLength, btnClear;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         btnConvertTemperature = findViewById(R.id.btn_convert_temperature);
         btnConvertCurrency = findViewById(R.id.btn_convert_currency);
         btnConvertLength = findViewById(R.id.btn_convert_length);
+        btnClear = findViewById(R.id.btn_clear);
 
         // Configurar los Spinners
         setupTemperatureSpinners();
@@ -53,6 +54,17 @@ public class MainActivity extends AppCompatActivity {
         btnConvertTemperature.setOnClickListener(view -> convertTemperature());
         btnConvertCurrency.setOnClickListener(view -> convertCurrency());
         btnConvertLength.setOnClickListener(view -> convertLength());
+
+        // Configurar botón limpiar
+        btnClear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Limpiar solo los resultados (TextViews)
+                resultTemperature.setText("Resultado:");
+                resultCurrency.setText("Resultado:");
+                resultLength.setText("Resultado:");
+            }
+        });
     }
 
     private void setupTemperatureSpinners() {
