@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Conversor</string>
+
+    <!-- Opciones de temperatura -->
+    <string-array name="temperature_units">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+        <item>Kelvin</item>
+        <item>Rankine</item> <!-- Nueva opción -->
+        <item>Réaumur</item> <!-- Nueva opción -->
+        <item>Delisle</item> <!-- Nueva opción -->
+    </string-array>
+
+    <!-- Opciones de moneda -->
+    <string-array name="currency_units">
+        <item>Soles</item>
+        <item>Dólares</item>
+        <item>Euros</item>
+        <item>Libras Esterlinas</item> <!-- Nueva opción -->
+        <item>Yenes</item> <!-- Nueva opción -->
+        <item>Pesos Mexicanos</item> <!-- Nueva opción -->
+    </string-array>
+
+    <!-- Opciones de longitud -->
+    <string-array name="length_units">
+        <item>Centímetros</item>
+        <item>Metros</item>
+        <item>Pies</item>
+        <item>Kilómetros</item> <!-- Nueva opción -->
+        <item>Milímetros</item> <!-- Nueva opción -->
+        <item>Yardas</item> <!-- Nueva opción -->
+    </string-array>
+</resources>

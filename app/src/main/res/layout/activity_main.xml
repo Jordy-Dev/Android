@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título de la app -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONVERSOR DE UNIDADES"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:paddingBottom="20dp"
+        android:fontFamily="sans-serif-medium"/>
+
+    <!-- Conversión de temperatura -->
+    <TextView
+        android:id="@+id/label_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertir Temperatura"
+        android:textSize="18sp"
+        android:paddingBottom="10dp" />
+
+    <EditText
+        android:id="@+id/input_temperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el valor"
+        android:inputType="numberDecimal" />
+
+    <Spinner
+        android:id="@+id/spinner_temperature_from"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:id="@+id/spinner_temperature_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_convert_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertir" />
+
+    <TextView
+        android:id="@+id/result_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado:"
+        android:textSize="16sp"
+        android:paddingTop="10dp" />
+
+    <!-- Conversión de moneda -->
+    <TextView
+        android:id="@+id/label_currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertir Moneda"
+        android:textSize="18sp"
+        android:paddingTop="20dp" />
+
+    <EditText
+        android:id="@+id/input_currency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese monto"
+        android:inputType="numberDecimal" />
+
+    <Spinner
+        android:id="@+id/spinner_currency_from"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:id="@+id/spinner_currency_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_convert_currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertir" />
+
+    <TextView
+        android:id="@+id/result_currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado:"
+        android:textSize="16sp"
+        android:paddingTop="10dp" />
+
+    <!-- Conversión de longitud -->
+    <TextView
+        android:id="@+id/label_length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertir Longitud"
+        android:textSize="18sp"
+        android:paddingTop="20dp" />
+
+    <EditText
+        android:id="@+id/input_length"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese valor"
+        android:inputType="numberDecimal" />
+
+    <Spinner
+        android:id="@+id/spinner_length_from"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:id="@+id/spinner_length_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_convert_length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertir" />
+
+    <TextView
+        android:id="@+id/result_length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado:"
+        android:textSize="16sp"
+        android:paddingTop="10dp" />
+
+</LinearLayout>
